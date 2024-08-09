@@ -61,3 +61,6 @@ dmypy.json
 .vscode/
 *.swp
 *.swo
+
+#Pickle files
+*.pkl
