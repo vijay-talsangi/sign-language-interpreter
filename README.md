@@ -1,6 +1,6 @@
 # Real-Time Sign Language Interpreter
 
-Welcome to the Real-Time Sign Language Interpreter! This project uses machine learning and computer vision to recognize and interpret American Sign Language (ASL) gestures in real-time. The interpreter currently recognizes individual letters and signed words, providing both on-screen visualization and audio output.
+Welcome to the Real-Time Sign Language Interpreter! This project uses machine learning and computer vision to recognize and interpret American Sign Language (ASL) gestures in real time. The interpreter currently recognizes individual letters and signed words, providing both on-screen visualization and audio output.
 
 ## Key Features
 
@@ -16,7 +16,7 @@ Welcome to the Real-Time Sign Language Interpreter! This project uses machine le
 
 ## How It Works
 
-1. **Hand Detection:** The `handDetector` class (located in `hand_detector2.py`) uses MediaPipe to detect and track hand landmarks in real-time. The detected landmarks are used as inputs for the letter and word recognition models.
+1. **Hand Detection:** The `handDetector` class (located in `hand_detector2.py`) uses MediaPipe to detect and track hand landmarks in real time. The detected landmarks are used as inputs for the letter and word recognition models.
 
 2. **Letter Recognition:** The `letter_interpreter.py` script captures hand landmarks and uses a trained Logistic Regression model to classify individual letters. When a letter is recognized, it is displayed on the screen and added to the current word being spelled. If the same letter is detected consistently, it is added to the word.
 
@@ -27,18 +27,6 @@ Welcome to the Real-Time Sign Language Interpreter! This project uses machine le
 5. **Data Collection:** The system allows users to collect new gesture data by pressing specific keys. This data is automatically saved and can be used to retrain the models, enhancing the system's recognition capabilities.
 
 ## Getting Started
-
-### Prerequisites
-
-- Python 3.x
-- OpenCV
-- MediaPipe
-- Pandas
-- NumPy
-- Scikit-learn
-- gTTS
-- pyGame
-
 ### Installation
 
 1. Clone the repository:
@@ -46,14 +34,19 @@ Welcome to the Real-Time Sign Language Interpreter! This project uses machine le
    ```
    git clone https://github.com/yourusername/sign-language-interpreter.git
    ```
+2. Start a virtual environment
+   ```
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
 
-2. Install the required Python packages:
+3. Install the required Python packages:
 
    ```
    pip install -r requirements.txt
    ```
 
-3. Run the interpreter scripts:
+4. Run the interpreter scripts:
 
    - For letter recognition:
      ```
@@ -80,3 +73,13 @@ Welcome to the Real-Time Sign Language Interpreter! This project uses machine le
 ## Acknowledgments
 
 This project is inspired by the desire to make communication more accessible and inclusive for the deaf community.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out!
+
+- **Email:** [laplace.sallis@gmail.com](mailto:laplace.sallis@gmail.com)
+- **LinkedIn:** [LaPlace Sallis IV](https://www.linkedin.com/in/laplace-sallis-iv-bbbb602a8/)
+- **GitHub:** [laplaces42](https://github.com/laplaces42)
+
+You can also open an issue on this repository if you have any questions or need support.
